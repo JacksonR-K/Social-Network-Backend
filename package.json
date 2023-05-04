@@ -1,0 +1,15 @@
+{
+  "name": "challenge-13-social-network",
+  "version": "1.0.0",
+  "description": "Backend example of a social network site",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  }
+}
