@@ -34,5 +34,6 @@ Any questions regarding the application can be directed via GitHub or Email:
 - jrkbirdy@hotmail.com
 
 ## Credits
-https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
-https://stackoverflow.com/questions/10645994/how-to-format-a-utc-date-as-a-yyyy-mm-dd-hhmmss-string-using-nodejs
+
+Source: https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
+Location of usage: /models/User.js
