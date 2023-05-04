@@ -1,7 +1,7 @@
 const { User, Thought, Reaction } = require('../models');
 
 module.exports = {
-    //getThoughts //GET
+    //getThoughts (GET)
     async getThoughts(req, res) {
         try {
             const thoughts = await Thought.find();
@@ -10,7 +10,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    //getSingleThought //GET
+    //getSingleThought (GET)
     async getSingleThought(req, res) {
         try {
             const thought = await Thought.findOne({_id: req.params.thoughtId})
@@ -23,7 +23,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    //addThought //POST (associate to user's thoughts array field)
+    //addThought (POST)
     async addThought(req, res) {
         try {
             const thought = await Thought.create(req.body);
@@ -46,7 +46,7 @@ module.exports = {
             res.status(500).json(err);
           }
     },
-    //updateThought //PUT
+    //updateThought (PUT)
     async updateThought(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
@@ -62,7 +62,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    //deleteThought //DELETE
+    //deleteThought (DELETE)
     async deleteThought(req, res) {
         try {
             const thought = await Thought.findOneAndDelete({_id: req.params.thoughtId});
@@ -78,7 +78,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    //addReaction //POST
+    //addReaction (POST)
     async addReaction(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
@@ -99,7 +99,7 @@ module.exports = {
             res.status(500).json(err);
               }
     },
-    //deleteReaction //DELETE
+    //deleteReaction (DELETE)
     async deleteReaction(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
