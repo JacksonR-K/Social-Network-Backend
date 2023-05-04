@@ -36,4 +36,5 @@ Any questions regarding the application can be directed via GitHub or Email:
 ## Credits
 
 Source: https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
+
 Location of usage: /models/User.js
